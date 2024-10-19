@@ -1,7 +1,6 @@
 import React from "react";
 import "./NavbarStyles.css";
-import menuIcon from "./menu.png";
-import { Link } from "react-router-dom";
+import menuIcon from "./menubar.png";
 
 export const Navbar = () => {
   return (
@@ -19,16 +18,16 @@ export const Navbar = () => {
             <a className="active">Home</a>
           </li>
           <li>
-            <a>About</a>
+            <a>Gems</a>
           </li>
           <li>
             <a>Services</a>
           </li>
           <li>
-            <a>Contact</a>
+            <a>About</a>
           </li>
           <li>
-            <a>Feedback</a>
+            <a>Contact</a>
           </li>
         </ul>
       </nav>
