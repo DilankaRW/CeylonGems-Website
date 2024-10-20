@@ -127,4 +127,16 @@ a:hover {
   #check:checked ~ ul {
     left: 0;
   }
+
+  .checkbtn img {
+    transition: transform 0.3s ease-in;
+  }
+
+  #check ~ .checkbtn img {
+    transform: rotate(90deg);
+  }
+
+  #check:checked ~ .checkbtn img {
+    transform: rotate(45deg);
+  }
 }
