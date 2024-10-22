@@ -1,11 +1,95 @@
-.main {
-  width: 100%;
-  height: 100vh;
-  position: relative;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-img {
+body{
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 100;
+}
+
+.parallax{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#text{
+  position: absolute;
+  font-size: 5em;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.parallax img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.sec{
+  position: relative;
+  background: #003329;
+  padding: 100px;
+}
+
+.sec h2{
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.sec p{
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
+}
+
+@media (max-width: 1366px) {
+  .parallax{
+      height: 123vh;
+  }
+}
+
+@media (max-width: 768px) {
+  header{
+      padding: 10px 20px;
+  }
+
+  .navigation a{
+      display: none;
+  }
+  
+  #text{
+      font-size: 2.5em;
+  }
+  
+  .parallax{
+      height: 47vh;
+  }
+
+  .sec{
+      padding: 35px;
+  }
+  
+  .sec h2{
+      font-size: 2em;
+  }
 }
