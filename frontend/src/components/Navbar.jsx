@@ -9,12 +9,6 @@ export const Navbar = () => {
 
   const handleCheckboxChange = (event) => {
     setMenuImage(event.target.checked ? menuclose : menubar);
-
-    // if (event.target.checked) {
-    //   setMenuImage(menuclose);
-    // } else {
-    //   setMenuImage(menubar);
-    // }
   };
 
   const handleLinkClick = (linkName) => {
@@ -38,19 +32,49 @@ export const Navbar = () => {
         <label className="logo">Ceylon Gems</label>
         <ul>
           <li>
-            <a>Home</a>
+            <a
+              href="#home"
+              className={activeLink === "home" ? "active" : ""}
+              onClick={() => handleLinkClick("home")}
+            >
+              Home
+            </a>
           </li>
           <li>
-            <a>Gems</a>
+            <a
+              href="#gems"
+              className={activeLink === "gems" ? "active" : ""}
+              onClick={() => handleLinkClick("gems")}
+            >
+              Gems
+            </a>
           </li>
           <li>
-            <a>Services</a>
+            <a
+              href="#services"
+              className={activeLink === "services" ? "active" : ""}
+              onClick={() => handleLinkClick("services")}
+            >
+              Services
+            </a>
           </li>
           <li>
-            <a>About</a>
+            <a
+              href="#about"
+              className={activeLink === "about" ? "active" : ""}
+              onClick={() => handleLinkClick("about")}
+            >
+              About
+            </a>
           </li>
           <li>
-            <a>Contact</a>
+            <a
+              href="#contact"
+              className={activeLink === "contact" ? "active" : ""}
+              onClick={() => handleLinkClick("contact")}
+            >
+              Contact
+            </a>
           </li>
         </ul>
       </nav>
